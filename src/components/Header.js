@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Navbar, NavbarBrand, Collapse, NavbarToggler, Nav, NavItem } from "reactstrap";
 import { NavLink } from "react-router-dom";
 import NucampLogo from "../app/assets/img/logo.png";
+import UserLoginForm from "../features/user/UserLoginForm";
 
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -38,7 +39,8 @@ const Header = () => {
                 <i className="fa fa-address-card fa-lg" /> Contact
               </NavLink>
             </NavItem>
-          </Nav>
+        </Nav>
+        <UserLoginForm />
       </Collapse>
     </Navbar>
   );
